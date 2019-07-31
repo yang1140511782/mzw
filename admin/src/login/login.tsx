@@ -1,8 +1,9 @@
 import * as React from 'react';
-import {Form, Input, Icon, Button } from 'antd';
+import { Form, Input, Icon, Button } from 'antd';
+import { FormComponentProps } from 'antd/lib/form';
 import './login.scss';
 
-interface IProps {
+interface IProps extends FormComponentProps {
   form: any;
 }
 
@@ -45,7 +46,7 @@ function Login(props: IProps) {
       </Form.Item>
       <Form.Item>
         <Button type="primary" htmlType="submit" className="login-form-button">
-          Log in
+          登录
         </Button>
       </Form.Item>
     </Form>

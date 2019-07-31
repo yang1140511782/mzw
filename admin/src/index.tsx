@@ -3,8 +3,9 @@ import * as ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Login from './login/login';
-import './index.css';
 
+import './index.scss';
+import './style/base.css';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
